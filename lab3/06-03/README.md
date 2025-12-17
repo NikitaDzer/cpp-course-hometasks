@@ -15,6 +15,7 @@
 * 0.4s - with modules
 
 ## Results
+
 * The size of executables is the same (24K)
 * Initial build is faster without modules
 * Incremental build is faster with modules
