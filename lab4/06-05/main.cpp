@@ -11,11 +11,11 @@ int main()
         std::cin >> library_name;
 
         std::string library_path;
-        if (library_name == "v2") {
-                library_path = "lib_v1.so";
+        if (library_name == "v1") {
+                library_path = "libv1.so";
         }
         else if (library_name == "v2") {
-                library_path = "lib_v2.so";
+                library_path = "libv2.so";
         }
         else {
                 std::print("Bad library!\n");

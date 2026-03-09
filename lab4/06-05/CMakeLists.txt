@@ -5,10 +5,7 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic")
 
-set(Boost_USE_STATIC_LIBS    ON)
-set(Boost_USE_STATIC_RUNTIME ON)
-
-find_package(Boost 1.82.0 REQUIRED COMPONENTS filesystem system)
+find_package(Boost 1.89 REQUIRED COMPONENTS filesystem)
 
 add_library(v1 SHARED v1.cpp)
 target_include_directories(v1 PRIVATE ${Boost_INCLUDE_DIRS})

@@ -334,5 +334,6 @@ int main() {
         std::cerr << "Caught unknown exception\n";
     }
 
-    return 0;
+    ::testing::InitGoogleTest();
+    return RUN_ALL_TESTS();
 }
