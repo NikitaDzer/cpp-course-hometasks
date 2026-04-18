@@ -187,7 +187,7 @@ int main() {
         }
         
         std::cout << std::endl;
-        for (int i = 0; i < 9; ++i) {
+        for (int i = 0; i < 9; ++i) { //where is this magic number 9 from?
             auto result = test_hash_function(hash_functions[i], strings);
             double collision_rate = (result.collisions * 100.0) / result.strings_tested;
             
@@ -227,3 +227,12 @@ int main() {
     
     return 0;
 }
+
+/*
+ * score is 4/10
+ * 1. need to add graph to repo
+ * 2. need to add conclusion here
+ * 3. need to add discussion here
+ * 
+ * 4. make everything std::string, not mix of char * and string 
+ * 
